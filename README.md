@@ -6,11 +6,11 @@ Create your own image filling animation effect in 3 simple steps:
 2. Provide the ImageFiller with an "empty" image, a "full" image and a gradient one (optional).
 3. Call the ImageFiller and let it do the rest...
 
-#Positive Apps
+# Positive Apps
 Positive Apps is a boutique development company, with a unique and talented team of developers.
 We use open code, and decided to donate and share it with the world.
 
-#License
+# License
 MIT License
 
 Copyright (c) 2018 Positive-Apps
