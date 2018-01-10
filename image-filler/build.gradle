@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'image-filler'
+
+    publishedGroupId = 'com.positive-apps.image-filler'
+    libraryName = 'ImageFiller'
+    artifact = 'image-filler'
+
+    libraryDescription = 'An easy way to create a simple animated image fill effect'
+
+    siteUrl = 'https://github.com/positiveapps/image-filler'
+    gitUrl = 'https://github.com/positiveapps/image-filler.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'positive-apps'
+    developerName = 'Positive Apps'
+    developerEmail = 'info@positive-apps.com'
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://github.com/positiveapps/image_filler/blob/master/LICENSE.txt'
+    allLicenses = ["MIT License"]
+}
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+//apply from: 'https://raw.githubusercontent.com/positiveapps/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/positiveapps/JCenter/master/bintrayv1.gradle'
